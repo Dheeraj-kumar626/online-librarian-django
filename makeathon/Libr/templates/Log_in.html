@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+	.f1{
+		width: 500px;
+		/*position: absolute;*/
+	}
+</style>
+	</head>
+	<body>
+		<form method="post" action="/Libr/logging/">
+	     {%csrf_token %}<!--this is important-->
+	     <div class="form-group text-center">
+		<label >username:</label>
+		<input type="text" name="username" placeholder="username" class="form-control f1" required><br>
+		<label>password:</label>
+		<input type="password" placeholder="password" class="form-control f1" name="password" required><br>
+		<button type="submit" class="btn btn-lg btn-success" id="b1">Submit</button><br>
+	</div>
+ </form>
+	</body>
+</html>
